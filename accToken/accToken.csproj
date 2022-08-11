@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.Azure.EventHubs" />
+    <None Remove="Microsoft.Identity.Client" />
+    <None Remove="System.Configuration.ConfigurationManager" />
+    <None Remove="StyleCop.Analyzers" />
+    <None Remove="Azure.Messaging.EventHubs.Processor" />
+    <None Remove="Azure.Identity" />
+    <None Remove="Azure.Messaging.EventHubs" />
+    <None Remove="Azure.Storage.Blobs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.EventHubs" Version="4.3.2" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.46.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Azure.Messaging.EventHubs.Processor" Version="5.7.2" />
+    <PackageReference Include="Azure.Identity" Version="1.6.1" />
+    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.7.2" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.13.0" />
+  </ItemGroup>
+</Project>
